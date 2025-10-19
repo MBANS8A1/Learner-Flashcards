@@ -1,7 +1,11 @@
 import "./App.css";
 import "./styles.css";
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Flashcards />
+    </div>
+  );
 }
 
 const questions = [
@@ -37,5 +41,9 @@ const questions = [
     answer: "Controlled element",
   },
 ];
+
+function Flashcards() {
+  return <div>TODO</div>;
+}
 
 export default App;
