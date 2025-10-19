@@ -45,7 +45,7 @@ function Flashcards() {
   return (
     <div className="flashcards">
       {questions.map((questionObj) => (
-        <div>
+        <div key={questionObj.id}>
           <p>{questionObj.question}</p>
         </div>
       ))}
