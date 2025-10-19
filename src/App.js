@@ -1,4 +1,3 @@
-import "./App.css";
 import "./styles.css";
 function App() {
   return (
@@ -43,7 +42,15 @@ const questions = [
 ];
 
 function Flashcards() {
-  return <div>TODO</div>;
+  return (
+    <div>
+      {questions.map((questionObj) => (
+        <div>
+          <p>{questionObj.question}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default App;
