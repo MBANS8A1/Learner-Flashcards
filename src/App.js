@@ -43,7 +43,7 @@ const questions = [
 
 function Flashcards() {
   return (
-    <div>
+    <div className="flashcards">
       {questions.map((questionObj) => (
         <div>
           <p>{questionObj.question}</p>
